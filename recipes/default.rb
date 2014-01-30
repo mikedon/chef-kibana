@@ -78,7 +78,7 @@ end
 template "#{node['kibana']['web_dir']}/config.js" do
   source node['kibana']['config_template']
   cookbook node['kibana']['config_cookbook']
-  mode "0750"
+  mode "0644"
   user kibana_user
 end
 
